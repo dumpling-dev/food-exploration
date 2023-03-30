@@ -1,5 +1,5 @@
 <template>
-	<img class="logo" src="@/static/Home_Title.png" />
+	<img class="logo" src="@/static/hometop.png" />
 	<view class="content">
 		<view class="text-area">
 			<text class="title">{{ title }}</text>
@@ -12,7 +12,7 @@
 import Home from '@/component/home.vue';
 </script>
 
-<style>
+<style scoped>
 .content {
 	display: flex;
 	flex-direction: column;
@@ -22,6 +22,7 @@ import Home from '@/component/home.vue';
 
 .logo {
 	width: 100%;
+    
 }
 
 .text-area {

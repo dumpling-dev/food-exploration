@@ -1,11 +1,11 @@
 <template>
     <div class="create-card">
-        <span class="text_clr">创建打卡</span>
-        <fui-icon name="plussign-fill" color="#465CFF"></fui-icon>
+        <span class="text_clr"> 创建打卡</span>
+        <fui-icon name="plussign-fill"></fui-icon>
     </div>
     <div class="invitation-card">
         <span class="text_clr">邀请打卡</span>
-        <fui-icon name="plussign-fill" color="#465CFF"></fui-icon>
+        <fui-icon name="plussign-fill"></fui-icon>
     </div>
 </template>
 <script setup>
@@ -15,22 +15,21 @@
 .invitation-card {
     width: 90%;
     height: 200rpx;
-    border: 5rpx solid rgb(112, 182, 255);
+    border: 1rpx solid rgb(222, 230, 229);
     border-radius: 20rpx;
-    /* background-color: rgb(112, 182, 255); */
+    box-shadow: 10rpx 10rpx 10rpx rgb(236, 237, 238);
     margin: auto;
     margin-top: 40rpx;
     display: flex;
-    /* justify-content: center;  */
     justify-content: space-between;
 
 }
 
 .text_clr {
-    display: inline;
-    font-size: 60rpx;
+    /* display: inline; */
+    font-size: 30rpx;
     font-weight: 700;
-    color: rgb(181, 114, 201);
+    color: rgb(40, 39, 41);
     align-self: center;
     margin-left: 20rpx;
 }

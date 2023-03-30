@@ -1,8 +1,8 @@
 <template>
 	<div class="container">
 		<div class="avatar">
-			<fui-avatar text="刘" background="#FFB703"></fui-avatar>
-			<fui-avatar text="刘" background="#FFB703"></fui-avatar>
+			<fui-avatar shape="square" text="刘" background="#d3f3ee"></fui-avatar>
+			<fui-avatar shape="square" text="刘" background="#d3f3ee"></fui-avatar>
 		</div>
 		<form action="#">
 			<fui-input label="店铺名称" :bottomLeft="0" placeholder="请输入店铺名称"></fui-input>
@@ -12,7 +12,7 @@
 			<div class="image-uploader">
 				菜品图片上传
 			</div>
-			<fui-textarea placeholder="评论"></fui-textarea>
+			<fui-textarea placeholder="评论" ></fui-textarea>
 			<fui-radio-group name="radio" v-model="radioVal" @change="change">
 				<view class="fui-list__item">
 					<fui-label>
@@ -31,7 +31,7 @@
 			</fui-radio-group>
 			<div class="btn">
 				<fui-button width="350rpx" background="#fff" color="#465CFF" borderColor="#465CFF">发布</fui-button>
-				<fui-button width="350rpx" background="#fff" color="#465CFF" borderColor="#465CFF">重置</fui-button>
+				<!-- <fui-button width="350rpx" background="#fff" color="#465CFF" borderColor="#465CFF">重置</fui-button> -->
 			</div>
 		</form>
 
@@ -45,16 +45,24 @@ import { ref } from "vue"
 const radioVal = ref(0)
 </script>
 
-<style>
+<style scoped>
+
+.avatar>fui-avatar{
+	padding-left: 20rpx ;
+}
+/* page{
+	width: 100%;
+	background-color:  #d3f3ee;
+} */
 .container {
 	width: 100%;
-	background-color: rgb(241, 244, 250);
+	/* background-color: rgb(241, 244, 250); */
 }
 
 .image-uploader {
 	width: 200rpx;
 	height: 200rpx;
-	border: 5rpx solid rgb(112, 182, 255);
+	border: 5rpx solid #d3f3ee;
 	border-radius: 20rpx;
 	margin-top: 10rpx;
 }
@@ -76,4 +84,7 @@ const radioVal = ref(0)
 	margin-top: 10rpx;
 
 }
+/* .view_radius{
+	border-radius: 50rpx;
+} */
 </style>
